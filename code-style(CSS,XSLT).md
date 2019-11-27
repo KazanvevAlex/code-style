@@ -164,19 +164,7 @@ block-name__elem-name_mod-name_mod-val
 ```
 
 
-### Модификаторы
-
 Как и в объектно-ориентированном программировании, принцип единственной ответственности в CSS означает, что каждая CSS-реализация должна иметь одну ответственность.
-
-
-```html
-<header class="header">
-      <button class="button header__button">...</button>
-</header>
-
-```
-
-
 ```css
 .button {
     font-family: Arial, sans-serif; 
@@ -186,10 +174,3 @@ block-name__elem-name_mod-name_mod-val
 .header__button {
     margin: 30px;
     position: relative;
-}
-```
-
-### Принцип открытости/закрытости
-
-Любой HTML-элемент страницы должен быть открыт для модификации, но закрыт для изменения. Разрабатывать новые CSS-реализации следует так, чтобы не пришлось менять уже существующие.
-
